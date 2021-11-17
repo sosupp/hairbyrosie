@@ -26,6 +26,13 @@ Route::get('/', function () {
     'destroy' => 'public.subscriber.destroy',
 ]);
 
+
+// Gallery
+Route::resource('/gallery', 'PublicGalleryController')->names([
+    'index' => 'frontend.gallery.index',
+]);
+
+
 require __DIR__.'/auth.php';
 require __DIR__.'/admin.php';
 require __DIR__.'/user.php';
