@@ -23,7 +23,11 @@
     <body class="">
         <style>
             body{
-                background-color: rgb(231, 228, 228); /*#f3f4f8*/
+                /* background-color: rgb(231, 228, 228);  */
+                /* background-color: #f3f4f8; */
+                background-color: #f2f6fc;
+
+                /* background-color: #F6F8FA; */
             }
 
             /* MEDIA QUERIES */
@@ -38,7 +42,7 @@
 
         {{-- dashboard top navbar --}}
         <div class="container-fluid">
-            <div class="row sticky-top shadow-sm" style="height: ; background-color: #F6F8FA;">
+            <div class="row sticky-top" style="height: ; ">
                 {{-- top navs --}}
                 @include('includes.dashboard.header')
             </div>

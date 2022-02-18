@@ -32,6 +32,11 @@ Route::resource('/gallery', 'PublicGalleryController')->names([
     'index' => 'frontend.gallery.index',
 ]);
 
+// Booking
+Route::resource('/appointment', 'PublicAppointmentController')->names([
+    'index' => 'frontend.booking.index',
+]);
+
 
 require __DIR__.'/auth.php';
 require __DIR__.'/admin.php';

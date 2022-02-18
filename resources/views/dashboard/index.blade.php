@@ -10,7 +10,7 @@
     .site-performance,
     .top-articles,
     .extra-section{
-        background-color: whitesmoke;
+        background-color: white;
         border-radius: 10px;
         padding: 20px;
         margin-bottom: 15px;
@@ -37,7 +37,7 @@
 
 
 
-    <h4>Welcome to Dashboard</h4>
+    <h4>Dashboard</h4>
 
     {{-- Section 1 --}}
         {{-- Brief Stats: section 1 --}}

@@ -1,7 +1,7 @@
 <style>
     .side-nav-box{
         min-height: 100vh;
-        background-color: #F6F8FA;
+        /* background-color: #F6F8FA; */
     }
 
     .side-nav-main{

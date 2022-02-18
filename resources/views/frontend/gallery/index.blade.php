@@ -12,7 +12,7 @@
     .gallery-style-item-image{
         width: 300px;
         height: 320px;
-        background-color: white;
+        background-color: whitesmoke;
         margin-right: 1rem;
     }
 
@@ -22,7 +22,10 @@
 @endsection
 
 @section('content')
-<h1>Styles Gallery</h1>
+
+<x-gallery-component></x-gallery-component>
+
+{{-- <h1>Styles Gallery</h1>
 
 <p class="lead">Browse through some of our beaitufully delivered services.</p>
 
@@ -142,7 +145,7 @@
 
 
     </div>
-</div>
+</div> --}}
 
 @endsection
 

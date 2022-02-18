@@ -1,5 +1,5 @@
 body{
-    background-color: whitesmoke;
+    /* background-color: #e6e6e6; */
     padding-bottom: 10rem;
 }
 
@@ -27,10 +27,12 @@ body{
     height: 500px;
     /* background-blend-mode: soft-light; */
     background-image: url('/images/hairs7.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     /* background-color: orange; */
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     /* padding: 0 1rem 1rem 1rem; */
+    background-attachment: fixed;
 }
 .homepage-glass-wrapper{
     width: 100%;

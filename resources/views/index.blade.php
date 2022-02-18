@@ -2,13 +2,13 @@
 <style>
 
 </style>
-
+@include('includes.frontend.header')
 @section('page-hero')
 {{-- hero --}}
 <div class="homepage-hero-wrapper">
 
     <div class="homepage-glass-wrapper">
-        @include('includes.frontend.header')
+
         <div class="cta-btn">
             <a href="#" id="bookOnline">Book Online</a>
             <a href="{{route('frontend.gallery.index')}}" id="moreStyles">Styles Gallery</a>
