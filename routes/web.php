@@ -35,6 +35,7 @@ Route::resource('/gallery', 'PublicGalleryController')->names([
 // Booking
 Route::resource('/appointment', 'PublicAppointmentController')->names([
     'index' => 'frontend.booking.index',
+    'create' => 'frontend.booking.create',
 ]);
 
 
