@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\RegisteredAdminController;
+use App\Http\Controllers\BackendProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -60,6 +61,30 @@ Route::middleware(['auth:admin'])->group(function () {
             'edit' => 'dashboard.category.edit',
             'update' => 'dashboard.category.update',
             'destroy' => 'dashboard.category.destroy',
+        ]);
+
+        // Products
+        // Route::controller(BackendProductController::class)->group(function(){
+        //     Route::get('/products', 'index')->name('dashboard.product.index');
+        // });
+        Route::resource('/dashboard/products', 'BackendProductController')->names([
+            'index' => 'dashboard.product.index',
+            'create' => 'dashboard.product.create',
+            'store' => 'dashboard.product.store',
+            'show' => 'dashboard.product.show',
+            'edit' => 'dashboard.product.edit',
+            'destroy' => 'dashboard.product.destroy',
+        ]);
+
+        // Services
+        Route::resource('/dashboard/services', 'BackendHairServiceController')->names([
+            'index' => 'dashboard.service.index',
+            'create' => 'dashboard.service.create',
+            'store' => 'dashboard.service.store',
+            'show' => 'dashboard.service.show',
+            'edit' => 'dashboard.service.edit',
+            'destroy' => 'dashboard.service.destroy',
+            'update' => 'dashboard.service.update',
         ]);
 
         // Tags

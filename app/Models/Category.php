@@ -21,4 +21,13 @@ class Category extends Model
         return $this->belongsTo('App\Models\Admin');
     }
 
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
+    public function hair_services()
+    {
+        return $this->hasMany(HairService::class);
+    }
 }

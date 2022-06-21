@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             OwnerSeeder::class,
             SuperAdminSeeder::class,
             RoleSeeder::class,
+            CategorySeeder::class,
         ]);
     }
 }

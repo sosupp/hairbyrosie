@@ -127,6 +127,7 @@
 
             <div class="nav-items">
                 <ul>
+                    <li><a href="#">Shop</a></li>
                     <li>
                         <a href="#">Services</a>
                     </li>

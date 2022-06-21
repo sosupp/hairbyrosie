@@ -73,4 +73,9 @@ class Admin extends Authenticatable
         return $this->hasMany('App\Models\Seasonalmessage');
     }
 
+    public function hair_services()
+    {
+        return $this->hasMany(HairService::class);
+    }
+
 }

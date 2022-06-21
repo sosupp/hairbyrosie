@@ -32,7 +32,7 @@
                 <tr>
                     <td scope="row">{{$role->id}}</td>
                     <td>{{$role->name}}</td>
-                    <td>{{$role->created_at->isoFormat('LL')}}</td>
+                    <td>{{$role->created_at}}</td>
                     <td>{{$role->admin->name}}</td>
 
                     <td class="d-flex">
