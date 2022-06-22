@@ -14,6 +14,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Passion+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400&display=swap" rel="stylesheet">
 
+        {{-- google icons/symbol --}}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
         <!-- Styles -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}

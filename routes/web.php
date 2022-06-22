@@ -19,6 +19,9 @@ Route::get('/', function () {
 });
 
 
+// Shop
+Route::controller();
+
  // Subscribers
  Route::resource('/subscriber', 'PublicSubscriberController')->names([
     'create' => 'public.subscriber.create',

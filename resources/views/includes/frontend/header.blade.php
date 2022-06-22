@@ -1,6 +1,21 @@
+
 <style>
+    /* .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    } */
+
+    .material-icons{
+        font-size: 14px;
+        padding: 0;
+        margin-left: 1rem;
+    }
     .site-main-nav{
-        background-color: #f2f6fc;
+        background-color: #ffffff;
+        box-shadow: 0 0 16px rgba(0,0,0,.15);
         /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
 
     }
@@ -9,8 +24,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 60px;
-        line-height: 60px;
+        /* line-height: 60px; */
+        padding: 0.8rem 0;
     }
     .brand-logo > a{
         text-decoration: none;
@@ -21,15 +36,7 @@
         font-size: 1.3rem;
         font-weight: bold;
         font-family: 'Comforter Brush', cursive;
-        /* margin: 0; */
-    }
-    .navbar-nav a{
-        padding: 0 0.5rem;
-        text-decoration: none;
-        color:orangered;
-        font-weight: bold;
-        text-shadow: 1px 1px 2px white;
-        font-size: 1.3rem;
+        margin: 0;
     }
     .menu-toggler{
         display: none;
@@ -51,19 +58,20 @@
     }
     .nav-items ul{
         margin: 0;
-        /* border: 1px solid red; */
-        padding: 0;
         display: flex;
+        align-items: center;
         list-style: none;
-        padding: 0;
     }
     .nav-items ul li{
-        padding:0 1rem;
+        padding: 0 1rem;
+        margin: 0;
     }
     .nav-items ul li a{
         text-decoration: none;
-        color: black;
-        font-weight: bold;
+        color: #1e1e27;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
     }
     .nav-items ul li a:hover{
         border-bottom: 5px solid orange;
@@ -132,10 +140,26 @@
                         <a href="#">Services</a>
                     </li>
                     <li><a href="#">Hair Styles</a></li>
-                    <li><a href="#">Products</a></li>
                     <li><a href="{{route('frontend.booking.index')}}">Appointment</a></li>
 
+
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">
+                                person
+                                </span>
+                        </a>
+
+                        <a href="#">
+                            <span class="material-icons">
+                                shopping_bag
+                                </span>
+                        </a>
+                    </li>
                 </ul>
+
+                {{-- cart icon --}}
+
 
                 {{-- <div class="nav-cta-wrapper">
                     <a href="{{ route('login') }}" class="btn btn-primary btn-sm">Log in</a>
@@ -143,7 +167,24 @@
                 </div> --}}
             </div>
 
+            {{-- cart and account --}}
+            {{-- <div class="cart-account-icons">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">
+                                person
+                                </span>
+                        </a>
 
+                        <a href="#">
+                            <span class="material-icons">
+                                shopping_bag
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+            </div> --}}
         </div>
 
 
